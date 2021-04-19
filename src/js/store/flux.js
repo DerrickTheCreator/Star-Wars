@@ -29,7 +29,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				setStore({ demo: demo });
 			},
 			loadPlanets: () => {
-				fetch("https://swapi.tech/api/planets/")
+				fetch("https://swapi.dev/api/planets/")
 					.then(res => {
 						if (!res.ok) {
 							throw Error(res.statusText);
@@ -43,7 +43,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					.catch(err => console.error(err));
 			},
 			loadPeople: () => {
-				fetch("https://swapi.tech/api/people/")
+				fetch("https://swapi.dev/api/people/")
 					.then(res => {
 						if (!res.ok) {
 							throw Error(res.statusText);
